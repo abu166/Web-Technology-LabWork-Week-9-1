@@ -1,0 +1,15 @@
+<div id="progressContainer" style="width: 100%; background-color: #e0e0e0;">
+    <div id="progressBar" style="width: 0%; height: 30px; background-color: #76c7c0;"></div>
+</div>
+<button onclick="updateProgress()">Complete Task</button>
+
+<script>
+let progress = 0;
+
+function updateProgress() {
+    if (progress < 100) {
+        progress += 20; // Increase by 20% for each task
+        document.getElementById("progressBar").style.width = progress + "%";
+    }
+}
+</script>
